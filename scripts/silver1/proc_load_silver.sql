@@ -13,6 +13,7 @@ none
 this stored procedure does not accept any paramiters or return any value.
 */
 
+TRUNCATE TABLE silver1.outoscout24;
 INSERT INTO silver1.autoscout24(
 mileage ,
 make ,
