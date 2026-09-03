@@ -1,3 +1,17 @@
+/*
+=============================================================================================
+Quality checks
+=============================================================================================
+Script purpose:
+This script performs various quality checks for data consistency,acuracy.
+It includes checks for null or duplicates 
+unwanted spaces and data consistency
+
+Usage notes:
+Run these checks after data loading
+
+*/
+
 SELECT *
 FROM gold1.autoscout24;
 #checking for duplicates
