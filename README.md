@@ -33,7 +33,12 @@ Analyzed 43,867 used car listings from AutoScout platform to understand sales pe
 - GitHub - Documentation
 
 ### Dashboard
-![Dashboard](powerbi/dashboard.png)
+![Dashboard](powebi/dashboard.jpeg)
+
+**Key Visuals:**
+- Revenue 726M, 44K cars, 71 makes
+- Top Brand: Volkswagen 6.1K
+- Price vs Mileage analysis
 
 ---
 ### About Me
