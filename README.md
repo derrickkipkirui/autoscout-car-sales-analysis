@@ -9,9 +9,16 @@ Analyzed 43,867 used car listings from AutoScout platform to understand sales pe
 - **Fields:** make, price, mileage, horsepower, fuel type, gear type, offer type
 
 ### Process - Medallion Architecture
-**Bronze:** Ingested raw CSV (44K records)  
-**Silver:** Cleaned in SQL - removed null prices, outliers in mileage (>500K km), standardized fuel types  
-**Gold:** Created 1 final table for Power BI with KPIs
+
+**Bronze Layer:** Raw ingestion + data quality checks
+- Location: `scripts/` & `tests/quality_checks_bronze1.sql`
+- Validates nulls, duplicates, price ranges
+
+**Silver Layer:** Cleaned & transformed data
+
+**Gold Layer:** Business-ready data for analysis
+- Table: `gold1.autoscout24`
+- Insights: `exploratory_data_analysis.sql`
 
 ### Dashboard KPIs (from screenshot)
 - **Total Revenue:** 726M
@@ -28,9 +35,9 @@ Analyzed 43,867 used car listings from AutoScout platform to understand sales pe
 4.  **Car Type:** Used cars are 85% of inventory, pre-registered and demonstration make small share
 
 ### Tools Used
-- SQL (MySQL) - Cleaning & Gold KPIs
+- SQL (MySQL) - Cleaning, Analysis, EDA & Gold KPIs
 - Power BI - Dashboard
-- GitHub - Documentation
+- GitHub - Documentation,version control
 
 ### Dashboard
 ![Dashboard](dashboard.jpeg)
