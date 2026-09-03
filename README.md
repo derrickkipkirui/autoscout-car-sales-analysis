@@ -33,7 +33,7 @@ Analyzed 43,867 used car listings from AutoScout platform to understand sales pe
 - GitHub - Documentation
 
 ### Dashboard
-![AutoScout Dashboard](powebi/dashboard.png)
+![dashboard](powebi/dashboard.png)
 
 **Key Visuals:**
 - Revenue 726M, 44K cars, 71 makes
